@@ -1,0 +1,556 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Amplify の初期設定（新規） · タイトル</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.7.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03-amplify-account-create-1.html" />
+    
+    
+    <link rel="prev" href="02-cloud9-create.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="00-preparation.html">
+            
+                <a href="00-preparation.html">
+            
+                    
+                    事前準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-introduction.html">
+            
+                <a href="01-introduction.html">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-cloud9-create.html">
+            
+                <a href="02-cloud9-create.html">
+            
+                    
+                    Cloud9 の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="03-amplify-account-create.html">
+            
+                <a href="03-amplify-account-create.html">
+            
+                    
+                    Amplify の初期設定（新規）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03-amplify-account-create-1.html">
+            
+                <a href="03-amplify-account-create-1.html">
+            
+                    
+                    Amplify の初期設定（既存）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04-amplify-basic-create.html">
+            
+                <a href="04-amplify-basic-create.html">
+            
+                    
+                    Amplify のベース作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="05-adding-api.html">
+            
+                <a href="05-adding-api.html">
+            
+                    
+                    API 機能の追加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06-adding-bootstrap.html">
+            
+                <a href="06-adding-bootstrap.html">
+            
+                    
+                    Bootstrap の導入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07-adding-auth.html">
+            
+                <a href="07-adding-auth.html">
+            
+                    
+                    Auth 機能の追加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="11-environment-delete.html">
+            
+                <a href="11-environment-delete.html">
+            
+                    
+                    環境の削除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="90-production-memo.html">
+            
+                <a href="90-production-memo.html">
+            
+                    
+                    制作メモ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Amplify の初期設定（新規）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="amplify-の初期設定（新規）"><a name="amplify-の初期設定（新規）" class="plugin-anchor" href="#amplify-の初期設定（新規）"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify の初期設定（新規）</h1>
+<p><img src="https://i.gyazo.com/f621a122e26e1bf3d039c6f35e1e90a7.png" alt="image"></p>
+<p>Cloud9 から Amplify を作れる AWS IAM ユーザーの作成をします。</p>
+<p><img src="https://i.gyazo.com/50d8c376fd44e35ab99e7178cd091b0d.png" alt="image"></p>
+<p>そして、作ったユーザーを示すアクセスキー ID とシークレットアクセスキーで Amplify がつくれるようにターミナルに設定します。</p>
+<p><img src="https://i.gyazo.com/7b978d74330a39631e1cc9431fe62f49.png" alt="image"></p>
+<p>この作業は Cloud9 のターミナルで作業を進めます。</p>
+<h2 id="初めて-amplify-iam-ユーザーをつくる場合と、すでに-amplify-用の-iam-ユーザーがある場合で流れが変わります"><a name="初めて-amplify-iam-ユーザーをつくる場合と、すでに-amplify-用の-iam-ユーザーがある場合で流れが変わります" class="plugin-anchor" href="#初めて-amplify-iam-ユーザーをつくる場合と、すでに-amplify-用の-iam-ユーザーがある場合で流れが変わります"><i class="fa fa-link" aria-hidden="true"></i></a>初めて Amplify IAM ユーザーをつくる場合と、すでに Amplify 用の IAM ユーザーがある場合で流れが変わります</h2>
+<ul>
+<li>初めて IAM ユーザーをつくる場合<ul>
+<li>このまま、以下の流れを進めます。</li>
+</ul>
+</li>
+<li>すでに Amplify 用の IAM ユーザーがある場合<ul>
+<li>一度、このハンズオンを済ませるなどしてすでに Amplify 用の IAM ユーザーがある場合は <a href="03-amplify-account-create-1.html">Amplify の初期設定（既存）</a> に進みます。</li>
+</ul>
+</li>
+</ul>
+<h2 id="amplify-cli-インストール"><a name="amplify-cli-インストール" class="plugin-anchor" href="#amplify-cli-インストール"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify CLI インストール</h2>
+<p>Amplify CLI をインストールします。</p>
+<pre><code>npm install -g @aws-amplify/cli
+</code></pre><p>こちらのコマンドをコピーアンドペーストで入力して実行して、インストールを待ちます。</p>
+<p><img src="https://i.gyazo.com/550100bc65037a688ac59f4e08752241.png" alt="image"></p>
+<p>コピーアンドペースト時にブラウザのアドレスバーでクリップボードの許可がでてくるので許可します。これをすれば今後はペーストできます。</p>
+<h2 id="amplify-初期設定をはじめる"><a name="amplify-初期設定をはじめる" class="plugin-anchor" href="#amplify-初期設定をはじめる"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify 初期設定をはじめる</h2>
+<pre><code>amplify configure
+</code></pre><p>こちらのコマンドを実行します。</p>
+<pre><code>Follow these steps to set up access to your AWS account:
+
+Sign in to your AWS administrator account:
+https://console.aws.amazon.com/
+Press Enter to continue
+</code></pre><p>このようなメッセージが出てくるので Enter キーを押します。</p>
+<h3 id="specify-the-aws-region"><a name="specify-the-aws-region" class="plugin-anchor" href="#specify-the-aws-region"><i class="fa fa-link" aria-hidden="true"></i></a>Specify the AWS Region</h3>
+<p><img src="https://i.gyazo.com/d7403e2a37429e460c42a32bc41a62f3.png" alt="image"></p>
+<p>リージョンは ap-northeast-1 を選択して、Enter キーを押します。</p>
+<h3 id="specify-the-username-of-the-new-iam-user"><a name="specify-the-username-of-the-new-iam-user" class="plugin-anchor" href="#specify-the-username-of-the-new-iam-user"><i class="fa fa-link" aria-hidden="true"></i></a>Specify the username of the new IAM user:</h3>
+<p><img src="https://i.gyazo.com/62110af7cd533317a1a629765e6bb302.png" alt="image"></p>
+<p>Amplify のための新しい IAM ユーザーの名前を決めます。</p>
+<p>これは最初に提案される ランダムの名前（amplify-&lt;ランダム文字列&gt;）をそのままで OK です。</p>
+<p>Enter キーを押します。</p>
+<h3 id="complete-the-user-creation-using-the-aws-console"><a name="complete-the-user-creation-using-the-aws-console" class="plugin-anchor" href="#complete-the-user-creation-using-the-aws-console"><i class="fa fa-link" aria-hidden="true"></i></a>Complete the user creation using the AWS console</h3>
+<p>リージョンと IAM ユーザの名前が決まったので、ブラウザ上の AWS コンソールで実際に作成する URL が案内されました。</p>
+<p><img src="https://i.gyazo.com/968760e7cc5cae519c53185d46435e41.png" alt="image"></p>
+<p>緑色の URL の部分をクリックしましょう。</p>
+<h2 id="aws-コンソール（新しくユーザーを作る場合）"><a name="aws-コンソール（新しくユーザーを作る場合）" class="plugin-anchor" href="#aws-コンソール（新しくユーザーを作る場合）"><i class="fa fa-link" aria-hidden="true"></i></a>AWS コンソール（新しくユーザーを作る場合）</h2>
+<p><img src="https://i.gyazo.com/e36550baf6f4974a36bdd60900e160e5.png" alt="image"></p>
+<p>Open をクリックします。</p>
+<p><img src="https://i.gyazo.com/d2be0dfa08d7f81bcab3de08eb31e3af.png" alt="image"></p>
+<p>ブラウザ上の AWS コンソールの IAM に移動します。さきほど決めたIAM ユーザーの名前が設定されています。</p>
+<h3 id="名前の変更"><a name="名前の変更" class="plugin-anchor" href="#名前の変更"><i class="fa fa-link" aria-hidden="true"></i></a>名前の変更</h3>
+<p><img src="https://i.gyazo.com/615c197bf30df131bf748096f7521d22.png" alt="image"></p>
+<p>このようにランダムの名前（amplify-&lt;ランダム文字列&gt;）になっているので、</p>
+<p><img src="https://i.gyazo.com/2566f6bf6135d893f23cc03341aa1260.png" alt="image"></p>
+<p>amplify とランダム文字列の間に Cloud9 と同様に自分の名前を加えてハイフンでつなぎます。</p>
+<h3 id="進める"><a name="進める" class="plugin-anchor" href="#進める"><i class="fa fa-link" aria-hidden="true"></i></a>進める</h3>
+<p><img src="https://i.gyazo.com/af7680fbfa2d6a240e52b2bc617bae8c.png" alt="image"></p>
+<p>右下の 次のステップ : アクセス権限 ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/6e8b6dfc50b49e0c30e58b42f016ab95.png" alt="image"></p>
+<p>AdministratorAccess-Amplify がチェックされていることを確認して、右下の 次のステップ : タグ ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/a368e189c4c22825018ef29775fcb576.png" alt="image"></p>
+<p>タグの追加項目は何も設定せず、右下の 次のステップ : 確認 ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/a5326dab0c21713b4f937c491cc4891a.png" alt="image"></p>
+<p>確認画面で、ユーザー名やアクセス権限にAdministratorAccess-Amplifyがあることを確認して、ユーザの作成ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/6806637dcfdb3cb93267f36d5b4c9c8e.png" alt="image"></p>
+<p>作成成功画面に移動します。</p>
+<h3 id="アクセスキー-id-をテキストエディタにメモ"><a name="アクセスキー-id-をテキストエディタにメモ" class="plugin-anchor" href="#アクセスキー-id-をテキストエディタにメモ"><i class="fa fa-link" aria-hidden="true"></i></a>アクセスキー ID をテキストエディタにメモ</h3>
+<p><img src="https://i.gyazo.com/09def33c31917a707f288040e0122ee8.png" alt="image"></p>
+<p>アクセスキー ID をテキストエディタにメモします。しっかり全文字コピーアンドペーストしてメモできているかを確認しましょう。</p>
+<h3 id="シークレットアクセスキーをテキストエディタにメモ"><a name="シークレットアクセスキーをテキストエディタにメモ" class="plugin-anchor" href="#シークレットアクセスキーをテキストエディタにメモ"><i class="fa fa-link" aria-hidden="true"></i></a>シークレットアクセスキーをテキストエディタにメモ</h3>
+<p><img src="https://i.gyazo.com/3bbd2feb8eba42656da510cf9faaf68c.png" alt="image"></p>
+<p>シークレットアクセスキーの表示をクリックします。</p>
+<p><img src="https://i.gyazo.com/97029c8ab8c0e4122786e3869f1c13f0.png" alt="image"></p>
+<p>シークレットアクセスキーをテキストエディタにメモします。シークレットアクセスキーは、閉じるまでの間、ここでしかメモすることができません。</p>
+<p>しっかり全文字コピーアンドペーストしてメモできているかを確認しましょう。</p>
+<p><img src="https://i.gyazo.com/dcd26a267777fbab105df98c0f6f7a6e.png" alt="image"></p>
+<p>閉じるボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/0743f735f8a8799d09600a6ae50f2e32.png" alt="image"></p>
+<p>IAM の一覧画面に戻って、作成されたことを確認します。</p>
+<p>「Cloud9 に設定を反映」に進みます。</p>
+<h2 id="すでに自分の-amplify-ユーザーを作っていてアクセスキー-id-とシークレットアクセスキーがある（すでにユーザーがある場合）"><a name="すでに自分の-amplify-ユーザーを作っていてアクセスキー-id-とシークレットアクセスキーがある（すでにユーザーがある場合）" class="plugin-anchor" href="#すでに自分の-amplify-ユーザーを作っていてアクセスキー-id-とシークレットアクセスキーがある（すでにユーザーがある場合）"><i class="fa fa-link" aria-hidden="true"></i></a>すでに自分の Amplify ユーザーを作っていてアクセスキー ID とシークレットアクセスキーがある（すでにユーザーがある場合）</h2>
+<p>この後の「Cloud9 に設定を反映」に進んで、</p>
+<h2 id="cloud9-に設定を反映"><a name="cloud9-に設定を反映" class="plugin-anchor" href="#cloud9-に設定を反映"><i class="fa fa-link" aria-hidden="true"></i></a>Cloud9 に設定を反映</h2>
+<p><img src="https://i.gyazo.com/c317a339450ce78517b22db098a771a8.png" alt="image"></p>
+<p>Cloud9 のターミナルに戻り、先ほどの Amplify CLI の設定途中になっています。</p>
+<h3 id="アクセスキー-id-をコピーアンドペーストして入力"><a name="アクセスキー-id-をコピーアンドペーストして入力" class="plugin-anchor" href="#アクセスキー-id-をコピーアンドペーストして入力"><i class="fa fa-link" aria-hidden="true"></i></a>アクセスキー ID をコピーアンドペーストして入力</h3>
+<p><img src="https://i.gyazo.com/5f266f1e0eb94cfa90ab87b43c2d89cc.png" alt="image"></p>
+<p>Amplify のための新しい IAM ユーザーのアクセスキーを聞かれるので、メモしたものを入力します。コピーアンドペーストできます。</p>
+<p>まず、アクセスキーをコピーします。</p>
+<p><img src="https://i.gyazo.com/39bac5ee793c19d9e3a1b23bc2dd4b78.png" alt="image"></p>
+<p>ターミナルで右クリックで Paste を選びましょう。</p>
+<p><img src="https://i.gyazo.com/64a046c31ef147a2bab0c683f7ec0afa.png" alt="image"></p>
+<p>ペーストするとこのように＊＊＊＊＊となります。</p>
+<p>Enter キーを押します。</p>
+<h3 id="シークレットアクセスキーをコピーアンドペーストして入力"><a name="シークレットアクセスキーをコピーアンドペーストして入力" class="plugin-anchor" href="#シークレットアクセスキーをコピーアンドペーストして入力"><i class="fa fa-link" aria-hidden="true"></i></a>シークレットアクセスキーをコピーアンドペーストして入力</h3>
+<p><img src="https://i.gyazo.com/636916da111dbba008e6606f0dfaca97.png" alt="image"></p>
+<p>Amplify のための新しい IAM ユーザーのシークレットアクセスキーを聞かれるので、メモしたものを入力します。コピーアンドペーストできます。</p>
+<p><img src="https://i.gyazo.com/2b907045a97f075eb110962d4880edf0.png" alt="image"></p>
+<p>入力できたら Enter キーを押します。</p>
+<h3 id="プロファイル名の設定"><a name="プロファイル名の設定" class="plugin-anchor" href="#プロファイル名の設定"><i class="fa fa-link" aria-hidden="true"></i></a>プロファイル名の設定</h3>
+<p>この Cloud9 のローカルのプロファイル名を指定が聞かれます。</p>
+<p>デフォルトのままで OK なので、 Enter キーを押します。</p>
+<p><img src="https://i.gyazo.com/731f1a2ec7aa061fc1a7b765703721ab.png" alt="image"></p>
+<p>Successfully set up the new user. とでて、この Cloud9 での Amplify 初期設定は完了です！</p>
+<h2 id="メモしたアクセスキー-id-とシークレットアクセスキーは大切に保管しましょう"><a name="メモしたアクセスキー-id-とシークレットアクセスキーは大切に保管しましょう" class="plugin-anchor" href="#メモしたアクセスキー-id-とシークレットアクセスキーは大切に保管しましょう"><i class="fa fa-link" aria-hidden="true"></i></a>メモしたアクセスキー ID とシークレットアクセスキーは大切に保管しましょう</h2>
+<p><img src="https://i.gyazo.com/02c15be7732c3be03f0258bb9a8341b2.png" alt="image"></p>
+<p>今回、みなさんそれぞれで作ったアクセスキー ID とシークレットアクセスキーは、ハッカソン中も新しく Amplify 環境をつくるときに Amplify CLI に毎回登録して使えます。</p>
+<p>大切に保管しておきましょう。</p>
+<p>「Amplify のベース作成」へ進みます。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-cloud9-create.html" class="navigation navigation-prev " aria-label="Previous page: Cloud9 の準備">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03-amplify-account-create-1.html" class="navigation navigation-next " aria-label="Next page: Amplify の初期設定（既存）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Amplify の初期設定（新規）","level":"1.5","depth":1,"next":{"title":"Amplify の初期設定（既存）","level":"1.6","depth":1,"path":"03-amplify-account-create-1.md","ref":"03-amplify-account-create-1.md","articles":[]},"previous":{"title":"Cloud9 の準備","level":"1.4","depth":1,"path":"02-cloud9-create.md","ref":"02-cloud9-create.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"03-amplify-account-create.md","mtime":"2022-08-28T12:51:18.506Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-31T14:00:47.547Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

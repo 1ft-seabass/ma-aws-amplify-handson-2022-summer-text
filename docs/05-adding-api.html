@@ -1,0 +1,715 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>API 機能の追加 · タイトル</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.7.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06-adding-bootstrap.html" />
+    
+    
+    <link rel="prev" href="04-amplify-basic-create.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="00-preparation.html">
+            
+                <a href="00-preparation.html">
+            
+                    
+                    事前準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-introduction.html">
+            
+                <a href="01-introduction.html">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-cloud9-create.html">
+            
+                <a href="02-cloud9-create.html">
+            
+                    
+                    Cloud9 の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-amplify-account-create.html">
+            
+                <a href="03-amplify-account-create.html">
+            
+                    
+                    Amplify の初期設定（新規）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03-amplify-account-create-1.html">
+            
+                <a href="03-amplify-account-create-1.html">
+            
+                    
+                    Amplify の初期設定（既存）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04-amplify-basic-create.html">
+            
+                <a href="04-amplify-basic-create.html">
+            
+                    
+                    Amplify のベース作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="05-adding-api.html">
+            
+                <a href="05-adding-api.html">
+            
+                    
+                    API 機能の追加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06-adding-bootstrap.html">
+            
+                <a href="06-adding-bootstrap.html">
+            
+                    
+                    Bootstrap の導入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07-adding-auth.html">
+            
+                <a href="07-adding-auth.html">
+            
+                    
+                    Auth 機能の追加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="11-environment-delete.html">
+            
+                <a href="11-environment-delete.html">
+            
+                    
+                    環境の削除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="90-production-memo.html">
+            
+                <a href="90-production-memo.html">
+            
+                    
+                    制作メモ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >API 機能の追加</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="api-機能の追加"><a name="api-機能の追加" class="plugin-anchor" href="#api-機能の追加"><i class="fa fa-link" aria-hidden="true"></i></a>API 機能の追加</h1>
+<p>API 機能を追加します。Dynamo DB を直接触れるような GraphQL と、Lambda でシンプルな REST API をつくるパターンがありますが、今回は REST API にします。</p>
+<p>なお、GraphQL が気になる方は</p>
+<p>Tutorial - Connect API and database to the app - Vue - AWS Amplify Docs
+<a href="https://docs.amplify.aws/start/getting-started/data-model/q/integration/vue/" target="_blank">https://docs.amplify.aws/start/getting-started/data-model/q/integration/vue/</a></p>
+<p>こちらに、使い方が詳しく載っています。</p>
+<h2 id="rest-api-機能の追加"><a name="rest-api-機能の追加" class="plugin-anchor" href="#rest-api-機能の追加"><i class="fa fa-link" aria-hidden="true"></i></a>REST API 機能の追加</h2>
+<pre><code>amplify api add
+</code></pre><p>コマンドを実行します。</p>
+<h3 id="select-from-one-of-the-below-mentioned-services"><a name="select-from-one-of-the-below-mentioned-services" class="plugin-anchor" href="#select-from-one-of-the-below-mentioned-services"><i class="fa fa-link" aria-hidden="true"></i></a>? Select from one of the below mentioned services:</h3>
+<p>REST を選択して Enter キーを押します。</p>
+<h3 id="provide-a-friendly-name-for-your-resource-to-be-used-as-a-label-for-this-category-in-the-project"><a name="provide-a-friendly-name-for-your-resource-to-be-used-as-a-label-for-this-category-in-the-project" class="plugin-anchor" href="#provide-a-friendly-name-for-your-resource-to-be-used-as-a-label-for-this-category-in-the-project"><i class="fa fa-link" aria-hidden="true"></i></a>? Provide a friendly name for your resource to be used as a label for this category in the project:</h3>
+<p>これは自動でつくられた名前で OK なので、そのまま Enter キーを押します。</p>
+<h3 id="provide-a-path-eg-bookisbn-‣-items"><a name="provide-a-path-eg-bookisbn-‣-items" class="plugin-anchor" href="#provide-a-path-eg-bookisbn-‣-items"><i class="fa fa-link" aria-hidden="true"></i></a>? Provide a path (e.g., /book/{isbn}): ‣ /items</h3>
+<p>API が作られたときの、最初の関数の名前＆パスです items のまま Enter キーを押します。</p>
+<h3 id="provide-an-aws-lambda-function-name-"><a name="provide-an-aws-lambda-function-name-" class="plugin-anchor" href="#provide-an-aws-lambda-function-name-"><i class="fa fa-link" aria-hidden="true"></i></a>? Provide an AWS Lambda function name: (<strong><strong><strong><strong>*</strong></strong></strong></strong>)</h3>
+<p>API を担当する Lambda の名前です。これも自動でつくられた名前で OK なので、そのまま Enter キーを押します。</p>
+<h3 id="choose-the-runtime-that-you-want-to-use-use-arrow-keys"><a name="choose-the-runtime-that-you-want-to-use-use-arrow-keys" class="plugin-anchor" href="#choose-the-runtime-that-you-want-to-use-use-arrow-keys"><i class="fa fa-link" aria-hidden="true"></i></a>? Choose the runtime that you want to use: (Use arrow keys)</h3>
+<p>NodeJS を選択して Enter キーを押します。</p>
+<h3 id="choose-the-function-template-that-you-want-to-use-use-arrow-keys"><a name="choose-the-function-template-that-you-want-to-use-use-arrow-keys" class="plugin-anchor" href="#choose-the-function-template-that-you-want-to-use-use-arrow-keys"><i class="fa fa-link" aria-hidden="true"></i></a>? Choose the function template that you want to use: (Use arrow keys)</h3>
+<p>Serverless ExpressJS function (Integration with API Gateway)  を選択して Enter キーを押します。</p>
+<h3 id="do-you-want-to-configure-advanced-settings-yn"><a name="do-you-want-to-configure-advanced-settings-yn" class="plugin-anchor" href="#do-you-want-to-configure-advanced-settings-yn"><i class="fa fa-link" aria-hidden="true"></i></a>Do you want to configure advanced settings? (y/N)</h3>
+<pre><code>Available advanced settings:
+- Resource access permissions
+- Scheduled recurring invocation
+- Lambda layers configuration
+- Environment variables configuration
+- Secret values configuration
+
+? Do you want to configure advanced settings? (y/N)
+</code></pre><p>いろいろな追加な設定を聞かれますが、今回は N を入力して Enter キーを押します。</p>
+<h3 id="do-you-want-to-edit-the-local-lambda-function-now-yn"><a name="do-you-want-to-edit-the-local-lambda-function-now-yn" class="plugin-anchor" href="#do-you-want-to-edit-the-local-lambda-function-now-yn"><i class="fa fa-link" aria-hidden="true"></i></a>? Do you want to edit the local lambda function now? (Y/n)</h3>
+<p>手元に今回の API の仕組みを持ってくるか聞かれます。</p>
+<p>Y を入力して Enter キーを押します。</p>
+<h3 id="try-opening-with-system-default-editor-instead-yn"><a name="try-opening-with-system-default-editor-instead-yn" class="plugin-anchor" href="#try-opening-with-system-default-editor-instead-yn"><i class="fa fa-link" aria-hidden="true"></i></a>? Try opening with system-default editor instead? (Y/n)</h3>
+<p>今回は N を入力して Enter キーを押します。</p>
+<p>ローカル PC の Visual Studio Code であればしっかり動作するのですが、Cloud 9 だとうまく開かないので No にしています。ただソースを見るだけですので、今後の作業に差支えはありません。</p>
+<pre><code>Successfully added resource amptanakaseigo4a488102 locally.
+
+Next steps:
+Check out sample function code generated in &lt;project-dir&gt;/amplify/backend/function/amptanakaseigo4a488102/src
+&quot;amplify function build&quot; builds all of your functions currently in the project
+&quot;amplify mock function &lt;functionName&gt;&quot; runs your function locally
+To access AWS resources outside of this Amplify app, edit the /home/ec2-user/environment/aws-amplify-vite-and-vue3-my-template/amplify/backend/function/amptanakaseigo4a488102/custom-policies.json
+&quot;amplify push&quot; builds all of your local backend resources and provisions them in the cloud
+&quot;amplify publish&quot; builds all of your local backend and front-end resources (if you added hosting category) and provisions them in the cloud
+✅ Succesfully added the Lambda function locally
+</code></pre><p>と、作成されました。</p>
+<p>なお、ファイル場所は、<code>&lt;project-dir&gt;/amplify/backend/function/&lt;AWS Lambda function name&gt;/src/app.js</code> が本体です。</p>
+<h3 id="restrict-api-access-yn-‣"><a name="restrict-api-access-yn-‣" class="plugin-anchor" href="#restrict-api-access-yn-‣"><i class="fa fa-link" aria-hidden="true"></i></a>? Restrict API access? (Y/n) ‣</h3>
+<p>これは今回作った items の API の入り口を、認証ユーザーのみで制限するかどうかを聞いています。ハッカソンの観点からも、まずはだれでもアクセス出来たほうが開発しやすいという観点から、「認証ユーザーのみで制限」は「なし」で進めます。</p>
+<p>ということで、一旦 N を入力します。</p>
+<h3 id="do-you-want-to-add-another-path-yn-‣"><a name="do-you-want-to-add-another-path-yn-‣" class="plugin-anchor" href="#do-you-want-to-add-another-path-yn-‣"><i class="fa fa-link" aria-hidden="true"></i></a>? Do you want to add another path? (y/N) ‣</h3>
+<p>他に作るパスはないので No を入力します。</p>
+<pre><code>✔ Restrict API access? (Y/n) · no
+✔ Do you want to add another path? (y/N) · no
+✅ Successfully added resource apia8f9f9f4 locally
+
+✅ Some next steps:
+&quot;amplify push&quot; will build all your local backend resources and provision it in the cloud
+&quot;amplify publish&quot; will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+</code></pre><p>このように表示され、設定が完了しました。</p>
+<h3 id="amplify-に設定を反映"><a name="amplify-に設定を反映" class="plugin-anchor" href="#amplify-に設定を反映"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify に設定を反映</h3>
+<p>現在、ローカルに設定が出来上がっただけですので、内容を反映します。</p>
+<pre><code>amplify status
+</code></pre><p>で、状態を確認します。</p>
+<p><img src="https://i.gyazo.com/6cabfcd2dddcb9d1e3025d721196bd6d.png" alt="image"></p>
+<p>このように API と Function が手元で作成されています。</p>
+<pre><code>amplify push
+</code></pre><p>こちらのコマンドを実行して <code>Are you sure you want to continue?</code> は Yes で進めて、クラウドの Amplify に設定を反映します。</p>
+<p><img src="https://i.gyazo.com/73fa32d12428c78cd94ff8420902f223.png" alt="image"></p>
+<p>しばらく反映を待ちます。</p>
+<pre><code>✔ All resources are updated in the cloud
+
+REST API endpoint: https://***********.execute-api.ap-northeast-1.amazonaws.com/dev
+</code></pre><p>と出たら反映完了です。</p>
+<h2 id="api-を直接叩いてみる"><a name="api-を直接叩いてみる" class="plugin-anchor" href="#api-を直接叩いてみる"><i class="fa fa-link" aria-hidden="true"></i></a>API を直接叩いてみる</h2>
+<p>さきほどの、REST API endpoint ～と書かれた URL が API のエンドポイントです。</p>
+<p>今回の /items の URL はこのようになります。</p>
+<pre><code>https://***********.execute-api.ap-northeast-1.amazonaws.com/dev/items
+</code></pre><p><code>***********</code> の部分はみなさんそれぞれのものになっているので、読み替えてください。</p>
+<p>ブラウザでアクセスしてみると</p>
+<pre><code>{&quot;success&quot;:&quot;get call succeed!&quot;,&quot;url&quot;:&quot;/items&quot;}
+</code></pre><p>と表示されるはずです。</p>
+<h2 id="実際のソースを見てみる"><a name="実際のソースを見てみる" class="plugin-anchor" href="#実際のソースを見てみる"><i class="fa fa-link" aria-hidden="true"></i></a>実際のソースを見てみる</h2>
+<p>さきほども少し触れましたが、このレスポンスを返しているのはファイル場所は、<code>&lt;project-dir&gt;/amplify/backend/function/&lt;AWS Lambda function name&gt;/src/app.js</code> のファイルです。</p>
+<p>ファイルツリーから探して開いてみましょう。</p>
+<pre><code class="lang-js"><span class="hljs-comment">/*
+Copyright 2017 - 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;). You may not use this file except in compliance with the License. A copy of the License is located at
+    http://aws.amazon.com/apache2.0/
+or in the &quot;license&quot; file accompanying this file. This file is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and limitations under the License.
+*/</span>
+
+
+
+
+<span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>)
+<span class="hljs-keyword">const</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;body-parser&apos;</span>)
+<span class="hljs-keyword">const</span> awsServerlessExpressMiddleware = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;aws-serverless-express/middleware&apos;</span>)
+
+<span class="hljs-comment">// declare a new express app</span>
+<span class="hljs-keyword">const</span> app = express()
+app.use(bodyParser.json())
+app.use(awsServerlessExpressMiddleware.eventContext())
+
+<span class="hljs-comment">// Enable CORS for all methods</span>
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  res.header(<span class="hljs-string">&quot;Access-Control-Allow-Origin&quot;</span>, <span class="hljs-string">&quot;*&quot;</span>)
+  res.header(<span class="hljs-string">&quot;Access-Control-Allow-Headers&quot;</span>, <span class="hljs-string">&quot;*&quot;</span>)
+  next()
+});
+
+
+<span class="hljs-comment">/**********************
+ * Example get method *
+ **********************/</span>
+
+app.get(<span class="hljs-string">&apos;/items&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-comment">// Add your code here</span>
+  res.json({<span class="hljs-attr">success</span>: <span class="hljs-string">&apos;get call succeed!&apos;</span>, <span class="hljs-attr">url</span>: req.url});
+});
+
+app.get(<span class="hljs-string">&apos;/items/*&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-comment">// Add your code here</span>
+  res.json({<span class="hljs-attr">success</span>: <span class="hljs-string">&apos;get call succeed!&apos;</span>, <span class="hljs-attr">url</span>: req.url});
+});
+
+<span class="hljs-comment">/****************************
+* Example post method *
+****************************/</span>
+
+app.post(<span class="hljs-string">&apos;/items&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-comment">// Add your code here</span>
+  res.json({<span class="hljs-attr">success</span>: <span class="hljs-string">&apos;post call succeed!&apos;</span>, <span class="hljs-attr">url</span>: req.url, <span class="hljs-attr">body</span>: req.body})
+});
+
+app.post(<span class="hljs-string">&apos;/items/*&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-comment">// Add your code here</span>
+  res.json({<span class="hljs-attr">success</span>: <span class="hljs-string">&apos;post call succeed!&apos;</span>, <span class="hljs-attr">url</span>: req.url, <span class="hljs-attr">body</span>: req.body})
+});
+
+<span class="hljs-comment">/****************************
+* Example put method *
+****************************/</span>
+
+app.put(<span class="hljs-string">&apos;/items&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-comment">// Add your code here</span>
+  res.json({<span class="hljs-attr">success</span>: <span class="hljs-string">&apos;put call succeed!&apos;</span>, <span class="hljs-attr">url</span>: req.url, <span class="hljs-attr">body</span>: req.body})
+});
+
+app.put(<span class="hljs-string">&apos;/items/*&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-comment">// Add your code here</span>
+  res.json({<span class="hljs-attr">success</span>: <span class="hljs-string">&apos;put call succeed!&apos;</span>, <span class="hljs-attr">url</span>: req.url, <span class="hljs-attr">body</span>: req.body})
+});
+
+<span class="hljs-comment">/****************************
+* Example delete method *
+****************************/</span>
+
+app.delete(<span class="hljs-string">&apos;/items&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-comment">// Add your code here</span>
+  res.json({<span class="hljs-attr">success</span>: <span class="hljs-string">&apos;delete call succeed!&apos;</span>, <span class="hljs-attr">url</span>: req.url});
+});
+
+app.delete(<span class="hljs-string">&apos;/items/*&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-comment">// Add your code here</span>
+  res.json({<span class="hljs-attr">success</span>: <span class="hljs-string">&apos;delete call succeed!&apos;</span>, <span class="hljs-attr">url</span>: req.url});
+});
+
+app.listen(<span class="hljs-number">3000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;App started&quot;</span>)
+});
+
+<span class="hljs-comment">// Export the app object. When executing the application local this does nothing. However,</span>
+<span class="hljs-comment">// to port it to AWS Lambda we will create a wrapper around that will load the app from</span>
+<span class="hljs-comment">// this file</span>
+<span class="hljs-built_in">module</span>.exports = app
+</code></pre>
+<p>このようなファイルが自動生成されて、Node.js と Express が分かれば編集可能です。</p>
+<p>ちょうど、さきほどブラウザアクセスで返答したものは <code>app.get(&apos;/items&apos;, function(req, res) {</code> あたりに書いてありますね。</p>
+<p>また、今後も Amplify コマンドで API のパスを増やすと自動生成できます。</p>
+<h2 id="api-を表示側から呼び出す"><a name="api-を表示側から呼び出す" class="plugin-anchor" href="#api-を表示側から呼び出す"><i class="fa fa-link" aria-hidden="true"></i></a>API を表示側から呼び出す</h2>
+<p>それでは、API を表示側から呼び出してみましょう。引き続き、aws-amplify-vite-and-vue3-my-template フォルダで進めます。</p>
+<p>Amplify は API を呼び出す部分も、提供されているライブラリから行います。</p>
+<p>API (REST) - Getting started - JavaScript - AWS Amplify Docs
+<a href="https://docs.amplify.aws/lib/restapi/getting-started/q/platform/js/" target="_blank">https://docs.amplify.aws/lib/restapi/getting-started/q/platform/js/</a></p>
+<p>詳しい使い方はこちらが参考になります。</p>
+<h2 id="amplify-status-で-api-のリソース名のメモ"><a name="amplify-status-で-api-のリソース名のメモ" class="plugin-anchor" href="#amplify-status-で-api-のリソース名のメモ"><i class="fa fa-link" aria-hidden="true"></i></a>amplify status で API のリソース名のメモ</h2>
+<p>この後、つくった API にアクセスするために API のリソース名のメモしておきます。</p>
+<pre><code>amplify status
+</code></pre><p>コマンドを実行します。</p>
+<p><img src="https://i.gyazo.com/9cddbad4e24501b612e7d5c16ec0f674.png" alt="image"></p>
+<p>こちらの Api のところの Resource name をメモしておきます。</p>
+<h2 id="srccomponentshelloworldvue-を修正"><a name="srccomponentshelloworldvue-を修正" class="plugin-anchor" href="#srccomponentshelloworldvue-を修正"><i class="fa fa-link" aria-hidden="true"></i></a>src/components/HelloWorld.vue を修正</h2>
+<h3 id="api-関連のモジュールを使えるように準備"><a name="api-関連のモジュールを使えるように準備" class="plugin-anchor" href="#api-関連のモジュールを使えるように準備"><i class="fa fa-link" aria-hidden="true"></i></a>API 関連のモジュールを使えるように準備</h3>
+<p>src/components/HelloWorld.vue をファイルツリーから開きます。</p>
+<pre><code class="lang-js">&lt;script setup&gt;
+<span class="hljs-keyword">import</span> { ref } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vue&apos;</span>
+</code></pre>
+<p>この部分を、</p>
+<pre><code class="lang-js">&lt;script setup&gt;
+<span class="hljs-keyword">import</span> { ref } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vue&apos;</span>
+<span class="hljs-keyword">import</span> { API } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;aws-amplify&apos;</span>;  <span class="hljs-comment">// API 関連のモジュールを使えるように準備</span>
+</code></pre>
+<h3 id="api-を読み込むプログラムを挿入"><a name="api-を読み込むプログラムを挿入" class="plugin-anchor" href="#api-を読み込むプログラムを挿入"><i class="fa fa-link" aria-hidden="true"></i></a>API を読み込むプログラムを挿入</h3>
+<p>API を読み込むプログラムを加えます。</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> count = ref(<span class="hljs-number">0</span>)
+</code></pre>
+<p>この部分を、以下に変更します。</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> count = ref(<span class="hljs-number">0</span>)
+
+<span class="hljs-comment">// API 返答後の値を入れるresultAPIオブジェクトを作成</span>
+<span class="hljs-keyword">const</span> resultAPI = ref(<span class="hljs-string">&apos;&apos;</span>);
+
+<span class="hljs-comment">// API /items 読み込み /////</span>
+
+<span class="hljs-keyword">const</span> getAPISample = <span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-keyword">const</span> apiName = <span class="hljs-string">&apos;apiName&apos;</span>;
+  <span class="hljs-keyword">const</span> path = <span class="hljs-string">&apos;/items&apos;</span>; 
+  <span class="hljs-keyword">const</span> config = { <span class="hljs-comment">// OPTIONAL</span>
+      <span class="hljs-attr">headers</span>: {}, <span class="hljs-comment">// OPTIONAL</span>
+      <span class="hljs-attr">response</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// OPTIONAL (return the entire Axios response object instead of only response.data)</span>
+      <span class="hljs-attr">queryStringParameters</span>: {  <span class="hljs-comment">// OPTIONAL</span>
+          <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;param&apos;</span>,
+      },
+  };
+
+  <span class="hljs-keyword">let</span> response;
+  <span class="hljs-keyword">try</span> {
+    response = <span class="hljs-keyword">await</span> API.get(apiName, path, config);
+    <span class="hljs-comment">// 受信成功</span>
+    resultAPI.value = response.data.success;
+  } <span class="hljs-keyword">catch</span>(error) {
+    <span class="hljs-comment">// 受信エラー</span>
+    <span class="hljs-built_in">console</span>.log(error.response);
+  }
+}
+
+getAPISample();
+<span class="hljs-comment">// API /items 読み込み ここまで /////</span>
+</code></pre>
+<p>に変更します。</p>
+<h3 id="html-部分の変更"><a name="html-部分の変更" class="plugin-anchor" href="#html-部分の変更"><i class="fa fa-link" aria-hidden="true"></i></a>HTML 部分の変更</h3>
+<p>データを受け取った後の値を反映する DOM を作ります。</p>
+<pre><code>&lt;template&gt;
+  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+</code></pre><p>部分を、</p>
+<pre><code>&lt;template&gt;
+  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+  &lt;h3&gt;{{ resultAPI }}&lt;/h3&gt;
+</code></pre><h3 id="リソース名の反映"><a name="リソース名の反映" class="plugin-anchor" href="#リソース名の反映"><i class="fa fa-link" aria-hidden="true"></i></a>リソース名の反映</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// API /items 読み込み /////</span>
+<span class="hljs-keyword">const</span> apiName = <span class="hljs-string">&apos;apiName&apos;</span>;
+</code></pre>
+<p>の apiName に、先ほどメモした自分の API のリソース名を反映します。</p>
+<p>たとえば abc12345 の場合は、</p>
+<pre><code class="lang-js"><span class="hljs-comment">// API /items 読み込み /////</span>
+<span class="hljs-keyword">const</span> apiName = <span class="hljs-string">&apos;abc12345&apos;</span>;
+</code></pre>
+<p>となります。</p>
+<h2 id="手元で実行してみる"><a name="手元で実行してみる" class="plugin-anchor" href="#手元で実行してみる"><i class="fa fa-link" aria-hidden="true"></i></a>手元で実行してみる</h2>
+<p>確認してみましょう。</p>
+<pre><code>npm run dev
+</code></pre><p>で手元の開発サーバーを起動して、Preview の操作で見てみましょう。</p>
+<p><img src="https://i.gyazo.com/d233456f725e8bd5b33f0532fd01ccdb.png" alt="image"></p>
+<p>このように、get call succeed! という <code>{&quot;success&quot;:&quot;get call succeed!&quot;,&quot;url&quot;:&quot;/items&quot;}</code> の結果から、success の値を取り出したものが表示側に反映されているはずです。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04-amplify-basic-create.html" class="navigation navigation-prev " aria-label="Previous page: Amplify のベース作成">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06-adding-bootstrap.html" class="navigation navigation-next " aria-label="Next page: Bootstrap の導入">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"API 機能の追加","level":"1.8","depth":1,"next":{"title":"Bootstrap の導入","level":"1.9","depth":1,"path":"06-adding-bootstrap.md","ref":"06-adding-bootstrap.md","articles":[]},"previous":{"title":"Amplify のベース作成","level":"1.7","depth":1,"path":"04-amplify-basic-create.md","ref":"04-amplify-basic-create.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"05-adding-api.md","mtime":"2022-08-31T11:24:56.638Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-31T14:00:47.547Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

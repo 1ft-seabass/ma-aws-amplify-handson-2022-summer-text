@@ -1,0 +1,595 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Cloud9 の準備 · タイトル</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.7.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03-amplify-account-create.html" />
+    
+    
+    <link rel="prev" href="01-introduction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="00-preparation.html">
+            
+                <a href="00-preparation.html">
+            
+                    
+                    事前準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-introduction.html">
+            
+                <a href="01-introduction.html">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="02-cloud9-create.html">
+            
+                <a href="02-cloud9-create.html">
+            
+                    
+                    Cloud9 の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-amplify-account-create.html">
+            
+                <a href="03-amplify-account-create.html">
+            
+                    
+                    Amplify の初期設定（新規）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03-amplify-account-create-1.html">
+            
+                <a href="03-amplify-account-create-1.html">
+            
+                    
+                    Amplify の初期設定（既存）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04-amplify-basic-create.html">
+            
+                <a href="04-amplify-basic-create.html">
+            
+                    
+                    Amplify のベース作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="05-adding-api.html">
+            
+                <a href="05-adding-api.html">
+            
+                    
+                    API 機能の追加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06-adding-bootstrap.html">
+            
+                <a href="06-adding-bootstrap.html">
+            
+                    
+                    Bootstrap の導入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07-adding-auth.html">
+            
+                <a href="07-adding-auth.html">
+            
+                    
+                    Auth 機能の追加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="11-environment-delete.html">
+            
+                <a href="11-environment-delete.html">
+            
+                    
+                    環境の削除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="90-production-memo.html">
+            
+                <a href="90-production-memo.html">
+            
+                    
+                    制作メモ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Cloud9 の準備</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cloud9-の準備"><a name="cloud9-の準備" class="plugin-anchor" href="#cloud9-の準備"><i class="fa fa-link" aria-hidden="true"></i></a>Cloud9 の準備</h1>
+<p><img src="https://i.gyazo.com/a38ce016608928e5f9b782f52aed91bd.png" alt="image"></p>
+<p>Amplify 環境を扱うために AWS 上でオンラインで動くエディタ Cloud9 を準備します。</p>
+<h2 id="自分の名前を半角英数字で決めておきます"><a name="自分の名前を半角英数字で決めておきます" class="plugin-anchor" href="#自分の名前を半角英数字で決めておきます"><i class="fa fa-link" aria-hidden="true"></i></a>自分の名前を半角英数字で決めておきます</h2>
+<p>このあと、つどつど自分の環境を分かりやすく作成します。</p>
+<p>自分の名前を使うので半角英数字で決めておきます。</p>
+<p>たとえば Tanaka Seigo の場合は tanaka-seigo です。</p>
+<h2 id="aws-にログインしましょう"><a name="aws-にログインしましょう" class="plugin-anchor" href="#aws-にログインしましょう"><i class="fa fa-link" aria-hidden="true"></i></a>AWS にログインしましょう</h2>
+<p><img src="https://i.gyazo.com/7ac8923b90fed81c1ce09700f6cfda41.png" alt="image"></p>
+<p>レッツログイン！</p>
+<h2 id="まず検索して-cloud9-にアクセス"><a name="まず検索して-cloud9-にアクセス" class="plugin-anchor" href="#まず検索して-cloud9-にアクセス"><i class="fa fa-link" aria-hidden="true"></i></a>まず検索して Cloud9 にアクセス</h2>
+<p><img src="https://i.gyazo.com/6a4fb8f45fb61ce60777fc019660b3d9.png" alt="image"></p>
+<p>Cloud9 で検索します。</p>
+<p><img src="https://i.gyazo.com/132e82be8ccc21f5d81761fe5d222452.png" alt="image"></p>
+<p>アクセスできました。</p>
+<p><img src="https://i.gyazo.com/55d538bde6ad1f5d851898f191876c48.png" alt="image"></p>
+<p>リージョンを東京に合わせます。</p>
+<p><img src="https://i.gyazo.com/b0dc51847bfb14009b17ab38042bb98e.png" alt="image"></p>
+<p>東京になっていることを確認します。</p>
+<p><img src="https://i.gyazo.com/f693e782384c070a6c375ecae2395c2a.png" alt="image"></p>
+<p>Create environment ボタンをクリックします。</p>
+<h2 id="name-environment"><a name="name-environment" class="plugin-anchor" href="#name-environment"><i class="fa fa-link" aria-hidden="true"></i></a>Name Environment</h2>
+<p><img src="https://i.gyazo.com/df747eb83d5f97b691f0bafb8969a2e5.png" alt="image"></p>
+<p>Name Environment ページに移動します。以下のように設定を行います。</p>
+<ul>
+<li>Name<ul>
+<li>aws-amplify-firststep-handson-&lt;自分の名前&gt;-202208</li>
+<li>例 : aws-amplify-firststep-handson-tanaka-seigo-202208</li>
+</ul>
+</li>
+<li>Description<ul>
+<li>任意</li>
+</ul>
+</li>
+</ul>
+<p>Next step ボタンをクリックします。</p>
+<h2 id="configure-settings"><a name="configure-settings" class="plugin-anchor" href="#configure-settings"><i class="fa fa-link" aria-hidden="true"></i></a>Configure settings</h2>
+<p><img src="https://i.gyazo.com/366baa9cbe7ebe6f8f777986fbc87e7c.png" alt="image"></p>
+<p>Configure settings ページに移動します。</p>
+<p>以下のように設定を行います。</p>
+<ul>
+<li>Environment type<ul>
+<li>そのまま</li>
+</ul>
+</li>
+<li>Instance type<ul>
+<li>m5.large</li>
+</ul>
+</li>
+<li>Platform<ul>
+<li>そのまま（Amazon Linux 2）</li>
+</ul>
+</li>
+</ul>
+<p>Next step をクリックします。</p>
+<h2 id="review"><a name="review" class="plugin-anchor" href="#review"><i class="fa fa-link" aria-hidden="true"></i></a>Review</h2>
+<p>Review ページに移動します。</p>
+<p><img src="https://i.gyazo.com/aa5223ab2ede185b95fc8bf8078944c7.png" alt="image"></p>
+<p>設定を確認して Create environment ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/fbc4dc89494a05b9b284d9e7614753ec.png" alt="image"></p>
+<p>2～3分待つと Cloud9 の画面が表示されます。</p>
+<p><img src="https://i.gyazo.com/ba5944d8d63248744e3e1354e90a818f.png" alt="image"></p>
+<p>できあがりました。</p>
+<h2 id="上部のメニューを確認します"><a name="上部のメニューを確認します" class="plugin-anchor" href="#上部のメニューを確認します"><i class="fa fa-link" aria-hidden="true"></i></a>上部のメニューを確認します</h2>
+<p><img src="https://i.gyazo.com/004e3b48c017513c63e514a8d07917e2.png" alt="image"></p>
+<p>上部のメニューを確認します。</p>
+<p><img src="https://i.gyazo.com/01f956525f21ee5a67d55722f83fcda8.png" alt="image"></p>
+<p>うっかりメニューを閉じてしまった人は、上部のこれくらいのスキマがクリックできるのでメニューを表示します。</p>
+<h2 id="dashboard"><a name="dashboard" class="plugin-anchor" href="#dashboard"><i class="fa fa-link" aria-hidden="true"></i></a>Dashboard</h2>
+<p><img src="https://i.gyazo.com/259059e1a71dd272d3d779bd7c296be4.png" alt="image"></p>
+<p>Cloud9 アイコンをクリックして、 Go To Your Dashboard をクリックします。</p>
+<p><img src="https://i.gyazo.com/eaf28656a79c1d7184e05dcaed836758.png" alt="image"></p>
+<p>別ウィンドウで Dashboard が開きます。</p>
+<h2 id="詳細設定へ"><a name="詳細設定へ" class="plugin-anchor" href="#詳細設定へ"><i class="fa fa-link" aria-hidden="true"></i></a>詳細設定へ</h2>
+<p><img src="https://i.gyazo.com/3c9a1bee9c84f407e6fc96d02ba4785b.png" alt="image"></p>
+<p>今回作成した Cloud9 の名前のチェックボックスをクリックして選択します。</p>
+<p><img src="https://i.gyazo.com/f8daffeb9fc6878a8c5893e026fbaab2.png" alt="image"></p>
+<p>選択した状態で上部の View details をクリックします。</p>
+<p><img src="https://i.gyazo.com/271898cd7b2a93224dc608bd4f2489fa.png" alt="image"></p>
+<p>Environment details ページに移動します。</p>
+<h2 id="ec2-の設定調整"><a name="ec2-の設定調整" class="plugin-anchor" href="#ec2-の設定調整"><i class="fa fa-link" aria-hidden="true"></i></a>EC2 の設定調整</h2>
+<p><img src="https://i.gyazo.com/10d0c5bccfbec7517d0444aeb955250a.png" alt="image"></p>
+<p>Environment details ページで EC2 Instance の項目の Go To Instance ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/8bcc29b7a62f8d8bd8fa90941628fa46.png" alt="image"></p>
+<p>今回 Cloud9 で使っている EC2 Instance で絞り込まれています。</p>
+<p><img src="https://i.gyazo.com/97b657fe66d5bd6004bac6e7b3dcf4c2.png" alt="image"></p>
+<p>aws-cloud9-... の項目のチェックボックスをクリックして選択します。</p>
+<p><img src="https://i.gyazo.com/4878699bfd37830c1b72541aa544df72.png" alt="image"></p>
+<p>下部にインスタンスの詳細が出てきます。</p>
+<p><img src="https://i.gyazo.com/12dd32e54a934aa4afcc9a71d21f71b1.png" alt="image"></p>
+<p>ストレージの欄をクリックします。</p>
+<p><img src="https://i.gyazo.com/ae6b6815cee495bb7b7bc029b2663641.png" alt="image"></p>
+<p>ボリューム ID をクリックします。</p>
+<p><img src="https://i.gyazo.com/36094d1d167f79e0f9775241ea1dde67.png" alt="image"></p>
+<p>今回のボリューム ID で絞り込まれています。</p>
+<p><img src="https://i.gyazo.com/96cb96f952b46554bd7231c638573caa.png" alt="image"></p>
+<p>チェックボックスをクリックして選択します。</p>
+<p><img src="https://i.gyazo.com/2dc4607e13a9466cf854d040998cad2b.png" alt="image"></p>
+<p>上部のアクションボタンをクリックして、ボリュームの変更をクリックします。</p>
+<p><img src="https://i.gyazo.com/f276af7bc972bf9dd85ac98e2618a598.png" alt="image"></p>
+<p>ボリュームの詳細ページが表示されます。もともとのサイズが 10 GiB になっていることを確認します。</p>
+<p><img src="https://i.gyazo.com/5116004779446699ce62bd73c7106f7c.png" alt="image"></p>
+<p>30 に変更して、変更ボタンをクリックします。（コツとしては 10 のときに 1 を選択して 3 と打ち込んで 30 とするのがおすすめです。）</p>
+<p><img src="https://i.gyazo.com/8f9800f5d733c071ce10220a3ca07c24.png" alt="image"></p>
+<p>アラートが出ますが、ここは変更するので、変更ボタンをクリックします。</p>
+<h2 id="インスタンスの再起動"><a name="インスタンスの再起動" class="plugin-anchor" href="#インスタンスの再起動"><i class="fa fa-link" aria-hidden="true"></i></a>インスタンスの再起動</h2>
+<p><img src="https://i.gyazo.com/dd7f801b2c5b85ebbfefe82bb0652472.png" alt="image"></p>
+<p>右のメニューからインスタンスをクリックして、インスタンスに戻ります。</p>
+<p><img src="https://i.gyazo.com/49cdedfaf49c4845fe1e0e0fa36d35fb.png" alt="image"></p>
+<p>今回のインスタンスがステータスチェックが緑で完了していることを確認しておきましょう。</p>
+<p><img src="https://i.gyazo.com/c7dea9c1da90f855dcc00ae0c493c1ba.png" alt="image"></p>
+<p>今回 Cloud9 で使っている EC2 Instance を選択します。</p>
+<p><img src="https://i.gyazo.com/31c5ef58255f30b668cd54f9a29029ab.png" alt="image"></p>
+<p>選択した上で、インスタンスの状態からインスタンスを再起動ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/621c0b4cc573998b62313c13ba38c021.png" alt="image"></p>
+<p>確認画面が出るので、今回 Cloud9 で使っている EC2 Instance かどうかを確認して再起動ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/3353dbd03466c6d17c441fca69395f2e.png" alt="image"></p>
+<p>正常に再起動しましたとメッセージが出て、再起動できたことを確認します。</p>
+<h2 id="cloud9-に戻ります"><a name="cloud9-に戻ります" class="plugin-anchor" href="#cloud9-に戻ります"><i class="fa fa-link" aria-hidden="true"></i></a>Cloud9 に戻ります</h2>
+<p><img src="https://i.gyazo.com/213625075fe0271c4b17236760cdd0e7.png" alt="image"></p>
+<p>今回使う Cloud9 に戻ります。再起動されたので、一度ブラウザを再読み込みしましょう。</p>
+<h2 id="ターミナルで容量確認"><a name="ターミナルで容量確認" class="plugin-anchor" href="#ターミナルで容量確認"><i class="fa fa-link" aria-hidden="true"></i></a>ターミナルで容量確認</h2>
+<p><img src="https://i.gyazo.com/34300908f77498404d5b7ca75ab35f0c.png" alt="image"></p>
+<p>下部のターミナルでコマンドを入力します。</p>
+<pre><code class="lang-bash">df -H
+</code></pre>
+<p>このコマンドを入力して Enter キーを押します。</p>
+<p>すると、以下のように結果が出ます。</p>
+<pre><code class="lang-text">Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        4.1G     0  4.1G   0% /dev
+tmpfs           4.1G     0  4.1G   0% /dev/shm
+tmpfs           4.1G  472k  4.1G   1% /run
+tmpfs           4.1G     0  4.1G   0% /sys/fs/cgroup
+/dev/nvme0n1p1   33G  8.9G   24G  28% /
+tmpfs           806M     0  806M   0% /run/user/1000
+</code></pre>
+<p>/dev/nvme0n1p1 の Size が 33G のボリュームになっていることを確認します。</p>
+<h2 id="credentials-を-off"><a name="credentials-を-off" class="plugin-anchor" href="#credentials-を-off"><i class="fa fa-link" aria-hidden="true"></i></a>Credentials を OFF</h2>
+<p>Credentials が ON のままだと作業時に影響があるようなので OFFにします。→ <a href="https://zenn.dev/shigeru_oda/books/521fa5a5a9c558c6275d/viewer/setup-cloud9#go-to-instance" target="_blank">参考</a></p>
+<p><img src="https://i.gyazo.com/139b29ed118f2b6dac321ddba6b7a0e2.png" alt="image"></p>
+<p>Cloud9 アイコンをクリックして、 Preferences をクリックします。</p>
+<p><img src="https://i.gyazo.com/ee6193d11f7561c56d896197587b9a19.png" alt="image"></p>
+<p>AWS Settings をクリックします。</p>
+<p><img src="https://i.gyazo.com/f2acfe9145b2573868bd5bf16d3f730d.png" alt="image"></p>
+<p>AWS managed temporary credentials の項目を確認します。 ON になっているはずです。</p>
+<p><img src="https://i.gyazo.com/1b92b63fc2143ecf12b3d0f483e8a01c.png" alt="image"></p>
+<p>これをスイッチをクリックして OFF にします。操作をしたと同時に設定が反映されます。</p>
+<p>これで Cloud9 の準備は完了です。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01-introduction.html" class="navigation navigation-prev " aria-label="Previous page: はじめに">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03-amplify-account-create.html" class="navigation navigation-next " aria-label="Next page: Amplify の初期設定（新規）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Cloud9 の準備","level":"1.4","depth":1,"next":{"title":"Amplify の初期設定（新規）","level":"1.5","depth":1,"path":"03-amplify-account-create.md","ref":"03-amplify-account-create.md","articles":[]},"previous":{"title":"はじめに","level":"1.3","depth":1,"path":"01-introduction.md","ref":"01-introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"02-cloud9-create.md","mtime":"2022-08-30T05:17:58.215Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-31T14:00:47.547Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
