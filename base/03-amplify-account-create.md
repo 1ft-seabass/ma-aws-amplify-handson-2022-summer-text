@@ -64,7 +64,7 @@ Press Enter to continue
 
 Amplify のための新しい IAM ユーザーの名前を決めます。
 
-これは最初に提案される ランダムの名前（amplify-<ランダム文字列>）をそのままで OK です。
+これは最初に提案される `ランダムの名前（amplify-<ランダム文字列>）` をそのままで OK です。
 
 Enter キーを押します。
 
@@ -90,7 +90,7 @@ Open をクリックします。
 
 ![image](https://i.gyazo.com/615c197bf30df131bf748096f7521d22.png)
 
-このようにランダムの名前（amplify-<ランダム文字列>）になっているので、
+このようにランダムの名前 `（amplify-<ランダム文字列>）` になっているので、
 
 ![image](https://i.gyazo.com/2566f6bf6135d893f23cc03341aa1260.png)
 

@@ -6,6 +6,8 @@
 
 大切に保管しておきましょう。
 
+Amplify の初期設定では、[Amplify の初期設定（新規）](03-amplify-account-create.md)では何度もアカウントを作ってしまうので、[Amplify の初期設定（既存）](03-amplify-account-create-1.md) をすすめましょう。
+
 ## シンプルな HTML だけで Amplify は使えますか
 
 もちろん、使えます。
