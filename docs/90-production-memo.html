@@ -303,6 +303,32 @@
 <h2 id="メモしたアクセスキー-id-とシークレットアクセスキーは大切に保管しましょう"><a name="メモしたアクセスキー-id-とシークレットアクセスキーは大切に保管しましょう" class="plugin-anchor" href="#メモしたアクセスキー-id-とシークレットアクセスキーは大切に保管しましょう"><i class="fa fa-link" aria-hidden="true"></i></a>メモしたアクセスキー ID とシークレットアクセスキーは大切に保管しましょう</h2>
 <p>今回、みなさんそれぞれで作ったアクセスキー ID とシークレットアクセスキーは、ハッカソン中も新しく Amplify 環境をつくるときに Amplify CLI に毎回登録して使えます。</p>
 <p>大切に保管しておきましょう。</p>
+<h2 id="シンプルな-html-だけで-amplify-は使えますか"><a name="シンプルな-html-だけで-amplify-は使えますか" class="plugin-anchor" href="#シンプルな-html-だけで-amplify-は使えますか"><i class="fa fa-link" aria-hidden="true"></i></a>シンプルな HTML だけで Amplify は使えますか</h2>
+<p>もちろん、使えます。</p>
+<p><a href="https://docs.amplify.aws/start/getting-started/setup/q/integration/js/" target="_blank">Tutorial - Set up fullstack project - JavaScript - AWS Amplify Docs</a></p>
+<p>このように、素の JavaScript チュートリアルがあり、ホスティングでの公開だけならシンプルに公開できると思います。</p>
+<p>ただ、デメリットはあり、API の連携や Auth での認証の追加の部分もチュートリアルがあるとはいえ、自前で JavaScript で組む必要があり一気に難易度が増すのでご注意ください。</p>
+<p>API の連携や Auth での認証も「柔軟に手軽に」行う場合は、Vue や React の恩恵を受けつつ Amplify UI を使うと良いでしょう。</p>
+<p>また、API や Auth 連携をしない単純な Web サイトを作る場合は、素の JavaScript と Bootstrap でも開発しきれると思います。</p>
+<h2 id="react-で開発したいときはどうすればよいでしょうか"><a name="react-で開発したいときはどうすればよいでしょうか" class="plugin-anchor" href="#react-で開発したいときはどうすればよいでしょうか"><i class="fa fa-link" aria-hidden="true"></i></a>React で開発したいときはどうすればよいでしょうか</h2>
+<p>Vue と同様、React のチュートリアルもあるので、そこからはじめることおすすめします。</p>
+<p>以下です。</p>
+<p><a href="https://docs.amplify.aws/start/q/integration/react/" target="_blank">Getting started - React - AWS Amplify Docs</a></p>
+<h2 id="vite--vue3-でよりしっかり開発したいのでコードヒントなどより充実した環境で開発したいです"><a name="vite--vue3-でよりしっかり開発したいのでコードヒントなどより充実した環境で開発したいです" class="plugin-anchor" href="#vite--vue3-でよりしっかり開発したいのでコードヒントなどより充実した環境で開発したいです"><i class="fa fa-link" aria-hidden="true"></i></a>Vite + Vue3 でよりしっかり開発したいのでコードヒントなどより充実した環境で開発したいです</h2>
+<p>Cloud9 でもある程度開発することができますが、たしかにコードヒントやエラー通知が弱めですね。</p>
+<p>その場合は、Visual Studio Code でローカルで開発することをおすすめします。</p>
+<p>Volar という拡張機能が Vite + Vue3 開発においてコードヒントなど強力にサポートしてくれます。</p>
+<h2 id="チュートリアルにある-vue-cli--vue3-はなぜ今回のハンズオンで採用しなかったのですか"><a name="チュートリアルにある-vue-cli--vue3-はなぜ今回のハンズオンで採用しなかったのですか" class="plugin-anchor" href="#チュートリアルにある-vue-cli--vue3-はなぜ今回のハンズオンで採用しなかったのですか"><i class="fa fa-link" aria-hidden="true"></i></a>チュートリアルにある Vue CLI + Vue3 はなぜ今回のハンズオンで採用しなかったのですか</h2>
+<p>まず、Vue CLI が、自動更新されるものの、その更新速度がとても重く、けっこうつらいです。</p>
+<p>ハッカソンのようなスピード感のある開発時には足かせになってしまうため Vite + Vue3 を採用しました。</p>
+<h2 id="api-は-auth-と組み合わせられますか？"><a name="api-は-auth-と組み合わせられますか？" class="plugin-anchor" href="#api-は-auth-と組み合わせられますか？"><i class="fa fa-link" aria-hidden="true"></i></a>API は Auth と組み合わせられますか？</h2>
+<p>はい、できます。</p>
+<p>今回のチュートリアルでは、API は認証なしでアクセスできることで、確認しやすく扱いやすいことを優先しました。ですが、再度 <code>amplify add api</code> で、新しいパスを生成後に、認証つきのアクセスするかを聞かれるので Yes にすれば対応可能です。</p>
+<p>ただ、ハッカソン開発では、もしかすると、細かく認証を通して丁寧につくるよりも、コアな機能を一旦認証を気にせず、とりあえずつくるケースも多そうですので、そこはバランスかなと思います～。</p>
+<h2 id="bootstrap-を使わないとだめですか？"><a name="bootstrap-を使わないとだめですか？" class="plugin-anchor" href="#bootstrap-を使わないとだめですか？"><i class="fa fa-link" aria-hidden="true"></i></a>Bootstrap を使わないとだめですか？</h2>
+<p>いいえ。</p>
+<p>今回はあくまで「簡単に装飾できるこんなしくみもあるよ」という意味でお伝えしました。ですので、もちろん無理に使う必要はありません。便利そうでしたらつかってみてください。</p>
+<p>また、もちろん、CSS フレームワークは他にもあり、自分にとって使い慣れたもの、自分のとって取っつきやすいものがあれば、そちらを組み込んで使うと良いと思います。</p>
 
                                 
                                 </section>
@@ -342,7 +368,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"制作メモ","level":"1.12","depth":1,"previous":{"title":"環境の削除","level":"1.11","depth":1,"path":"11-environment-delete.md","ref":"11-environment-delete.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"90-production-memo.md","mtime":"2022-08-30T08:27:04.188Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-31T14:03:41.732Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"制作メモ","level":"1.12","depth":1,"previous":{"title":"環境の削除","level":"1.11","depth":1,"path":"11-environment-delete.md","ref":"11-environment-delete.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"90-production-memo.md","mtime":"2022-09-01T00:55:48.287Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-09-01T00:56:09.223Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

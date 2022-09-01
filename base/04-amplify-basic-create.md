@@ -12,7 +12,22 @@ Amplify のアカウントが Cloud9 で設定できたので、今回の Amplif
 [AWS Amplify の公式チュートリアル](https://docs.amplify.aws/start/getting-started/setup/q/integration/vue/ 
 ) は Vue3 ですが動作が重い Vue CLI を使っているため、ハッカソンで試行錯誤を繰り返すときに足かせになる可能性があるので、今回は Vue3 + Vite の環境で構築します。
 
-## クローンします
+## テンプレートとなるリポジトリを使います
+
+https://github.com/1ft-seabass/aws-amplify-vite-and-vue3-my-template
+
+こちらのリポジトリを使います。
+
+- Vite による Vue3 用のテンプレート作成
+- package.json の修正
+- src/main.js への Amplify 対応
+- index.html への Amplify 対応
+- vite.config.js への Amplify と Cloud9 対応
+
+を行っています。詳しくは上記 README にも書いてあります。今回は、Vite + Vue の理解を深めるというより、なるべくすばやく Amplify を体験するという意図を大事にしているので、テンプレートとしてまとめてありますが、気になる方は見てみてください。
+
+
+## テンプレートとなるリポジトリをクローンします
 
 ```
 git clone https://github.com/1ft-seabass/aws-amplify-vite-and-vue3-my-template.git
